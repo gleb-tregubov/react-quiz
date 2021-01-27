@@ -18,7 +18,7 @@ const composeEnhancers =
 const store = createStore(
   rootReducer,
   composeEnhancers(
-    applyMiddleware()
+    applyMiddleware(thunk)
   )
 )
 
